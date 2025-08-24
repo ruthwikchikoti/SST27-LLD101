@@ -1,5 +1,4 @@
 public class Player {
-    private Frame last;
     IUi ui;
     ICache cache;
     IDecoder decoder;
