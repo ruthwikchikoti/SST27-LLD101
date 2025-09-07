@@ -2,6 +2,7 @@ package com.example.payments;
 
 import java.util.Map;
 import java.util.Objects;
+import com.example.payments.PaymentGateway;
 
 public class OrderService {
     private final Map<String, PaymentGateway> gateways;
