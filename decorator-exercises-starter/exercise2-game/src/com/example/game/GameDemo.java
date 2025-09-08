@@ -35,5 +35,16 @@ public class GameDemo {
         // Character withoutAura = buffed; // removal by recomposition
         // withoutAura.move();
         // withoutAura.attack();
+        Character buffed = new DamageBoostDecorator(new SpeedBoostDecorator(base, 3), 15);
+        buffed.move();
+        buffed.attack();
+
+        Character shiny = new GoldenAuraDecorator(buffed);
+        shiny.move();
+        shiny.attack();
+
+        Character withoutAura = buffed;
+        withoutAura.move();
+        withoutAura.attack();
     }
 }
